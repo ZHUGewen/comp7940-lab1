@@ -3,8 +3,8 @@ import logging
 import configparser
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from telegram import Update
-import os
-from sqlalchemy import null
+# import os
+# from sqlalchemy import null
 
 # proxy = 'http://127.0.0.1:4780'
 
