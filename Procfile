@@ -1,1 +1,1 @@
-python: python app/chatbot.py
+python: python chatbot.py
