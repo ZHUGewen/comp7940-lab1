@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: security-check
-        run: docker build -t dockerfile . && docker run -it dockerfile
+        run: docker build -t dockerfile . && docker run dockerfile
       - name: Deploy
         env: 
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
