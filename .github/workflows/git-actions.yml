@@ -13,7 +13,6 @@ jobs:
         fetch-depth: 0
 
         env:
-          DEP_PATH: ./requirements.txt
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
           HEROKU_APP_NAME: "comp7940chatbotgg"  # Rename this to the app of your Heroku app.
         run: docker run -dp 3000:3000 Dockerfile
