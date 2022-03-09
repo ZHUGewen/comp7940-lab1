@@ -7,11 +7,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Check out main
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
     - name: Security vulnerabilities scan
         uses: aufdenpunkt/python-safety-check@master
     - name: Check out python-safety-check master
         uses: actions/checkout@master
-        run: docker Dockerfile
+        run: docker run -dp 3000:3000 Dockerfile
     - name: may7940lab
       uses: ZHUGewen/comp7940-lab1@main
     - name: Check out main
